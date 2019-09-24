@@ -1,0 +1,13 @@
+char* myStrcpy(char* pre, const char* next)
+{
+    char out = pre;
+    if (pre == nullptr || next == nullptr)  //空指针直接返回
+    {
+        return nullptr;
+    }
+    if (pre == next)                       // 两者相等也无需拷贝了
+        return pre;
+
+    while ((*pre++ = *next++) != '\0');    // 依次赋值给主字符数组
+    return out;
+}
