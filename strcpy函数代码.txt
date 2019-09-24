@@ -11,3 +11,5 @@ char* myStrcpy(char* pre, const char* next)
     while ((*pre++ = *next++) != '\0');    // 依次赋值给主字符数组
     return out;
 }
+/* 
+按照课件要求假装修改一下*/
